@@ -1,0 +1,8 @@
+# ~/.tmuxinator/javascript-montage.yml
+
+name: javascript-montage
+root: ~/code/javascript-montage
+
+windows:
+  - editor: vim
+  - terminal: # noop

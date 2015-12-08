@@ -1,0 +1,11 @@
+# ~/.tmuxinator/flow.yml
+
+name: flow
+root: ~/code/flow
+
+windows:
+  - flow-editor: vim
+  - demo-editor: cd ~/code/flow-demo && vim
+  - terminal: # noop
+  - server: cd ~/code/flow-demo && flow server
+  - build-watch: npm run watch

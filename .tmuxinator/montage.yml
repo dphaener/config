@@ -1,0 +1,13 @@
+# ~/.tmuxinator/montage.yml
+
+name: montage
+root: ~/code/montage
+
+pre_window: workon montage
+
+windows:
+  - editor: vim
+  - console: python manage.py shell
+  - server: python manage.py runserver --traceback & python manage.py celeryd --traceback
+  - terminal: # noop
+  - gulp: gulp && gulp watch

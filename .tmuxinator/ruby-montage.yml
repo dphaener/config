@@ -1,0 +1,9 @@
+# ~/.tmuxinator/ruby-montage.yml
+
+name: ruby-montage
+root: ~/code/ruby-montage
+
+windows:
+  - editor: vim
+  - terminal: # noop
+  - console: bin/console

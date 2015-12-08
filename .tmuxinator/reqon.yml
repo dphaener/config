@@ -1,0 +1,9 @@
+# ~/.tmuxinator/reqon.yml
+
+name: reqon
+root: ~/code/reqon
+
+windows:
+  - editor: workon reqon && vim
+  - console: workon reqon && python
+  - terminal: workon reqon
